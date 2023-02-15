@@ -1,81 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
 <div class="text-layout">
-    <h1>Pipes Basicos</h1>
+    <h1 style="text-align:center">Resumen de proyecto</h1>
     <p>
         Pipes incluidos en Angular - Usualmente en el Common Module
     </p>
 </div>
 
+<body>
 
-<div class="p-grid">
-    <div class="p-col-4">
-        <p-card header="uppercase"
-                [subheader]="nombreLower">
+    <div class="p-grid">
+        <div class="p-col-12">
+            <p-card header="uppercase" [subheader]="nombreLower">
                 {{nombreLower | uppercase}}
-        </p-card>
-    </div>
-
-    <div class="p-col-4">
-        <p-card header="lowercase"
-                [subheader]="nombreUpper">
-                {{nombreUpper | lowercase}}
-        </p-card>
-    </div>
-
-    <div class="p-col-4">
-        <p-card header="titlecase"
-                [subheader]="nombreCompleto">
-                {{nombreCompleto | titlecase}}
-        </p-card>
+            </p-card>
+        </div>
     </div>
 
 
-</div>
 
 
-<div class="text-layout">
-    <h1>Date | Fecha | Pipe</h1>
-    <p>
-       Pipe para mostrar las fechas
-    </p>
-</div>
+    <div class="p-grid">
+
+        <div class="p-col-6">
+            <h1>Hechos relevantes de la semana</h1>
+            <p-card>
+                <ul>
+                    <li> {{fecha}}</li>
+                    <li> {{fecha | date}}</li>
+                    <li> {{fecha | date:'short'}}</li>
+                    <li> {{fecha | date:'long'}}</li>
+                    <li> {{fecha | date:'h:mm a dd/M/y'}}</li>
+                </ul>
 
 
-<div class="p-grid">
-    <div class="p-col-6">
-        <p-card>
-            <ul>
-                <li>fecha</li>
-                <li>fecha | date</li>
-                <li>fecha | date:'short'</li>
-                <li>fecha | date:'long'</li>
-                <li>fecha | date:'h:mm a dd/M/y'</li>
-            </ul>
+            </p-card>
 
-            <hr>
-            <ul>
-                <li>fecha | date:'long': 'GMT-4'</li>
-                <li>fecha | date:'long': 'GMT-2'</li>
-            </ul>
+            <h1>Compromisos para la proxima semana</h1>
+            <p-card>
+                <ul>
+                    <li> {{fecha}}</li>
+                    <li> {{fecha | date}}</li>
+                    <li> {{fecha | date:'short'}}</li>
+                    <li> {{fecha | date:'long'}}</li>
+                    <li> {{fecha | date:'h:mm a dd/M/y'}}</li>
+                </ul>
 
-        </p-card>
+
+            </p-card>
+        </div>
+
+        <div class="p-col-6">
+            <h1>Informacion Tactica</h1>
+            <p-card>
+                <ul>
+                    <li>fecha</li>
+                    <li>fecha | date</li>
+                    <li>fecha | date:'short'</li>
+                    <li>fecha | date:'long'</li>
+                    <li>fecha | date:'h:mm a dd/M/y'</li>
+                </ul>
+
+                <hr>
+                <ul>
+                    <li>fecha | date:'long': 'GMT-4'</li>
+                    <li>fecha | date:'long': 'GMT-2'</li>
+                </ul>
+
+            </p-card>
+
+            <!-- <span><br></span>
+            <div style="float: right">
+                <button pButton type="button" 
+                        label="Carta Gantt"
+                        class="p-button-info">
+                        </button>
+            </div>
+
+           
+            <div class="p-toolbar-group-left"></div>
+
+            <div style="float: right">
+                <button pButton type="button" 
+                        label="Guardar todo"
+                        class="p-button-info">
+                        </button>
+                        
+                <button pButton type="button" 
+                        label="Siguiente"
+                        class="p-button-info">
+                        </button>
+            </div> -->
+
+
+
+            <p-toolbar>
+
+                <div class="p-toolbar-group-left"></div>
+
+                <div class="p-toolbar-group-right">
+
+                    <button pButton type="button" label="Carta Gantt" class="p-mr-1 p-button-info ">
+                    </button>
+                </div>
+            </p-toolbar>
+
+
+            <p-toolbar>
+
+                <div class="p-toolbar-group-left"></div>
+
+                <div class=" p-toolbar-group-right ">
+
+                    <button pButton type="button" label="Gaurdar Todo" class="p-mr-1 p-button-info">
+                    </button>
+
+                    <button pButton type="button" label="Siguiente" class="p-mr-1 p-button-info">
+                    </button>
+
+
+                </div>
+            </p-toolbar>
+
+        </div>
+
     </div>
+</body>
 
-    <div class="p-col-6">
-        <p-card>
-            <ul>
-                <li> {{fecha}}</li>
-                <li> {{fecha | date}}</li>
-                <li> {{fecha | date:'short'}}</li>
-                <li> {{fecha | date:'long'}}</li>
-                <li> {{fecha | date:'h:mm a dd/M/y'}}</li>
-            </ul>
 
-            <hr>
-            <ul>
-                <li>{{fecha | date:'long': 'GMT-4':'es-CL'}}</li>
-                <li>{{fecha | date:'long': 'GMT-2'}}</li>
-                <li>{{fecha | date:'long': '':'fr'}}</li>
-            </ul>
-        </p-card>
-    </div>
-</div>
+
+
+</html>

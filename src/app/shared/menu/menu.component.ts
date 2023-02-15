@@ -35,7 +35,13 @@ export class MenuComponent {
         ]
       },
       {
-        label: 'Pipes personalizados',
+        label: 'Tareas',
+        icon: 'pi pi-cog',
+        routerLink: 'ordenar'
+      }
+      ,
+      {
+        label: 'Riesgos/problemas',
         icon: 'pi pi-cog',
         routerLink: 'ordenar'
       }
