@@ -1,12 +1,11 @@
 <div class="text-layout">
-    <h1>Pipes personalizados</h1>
-    <p> Pipes creados por {{'nosotros'| mayusculas:enMayusculas}}</p>
+    <h1 style="text-align:center">Resumen de proyecto</h1>
    
 </div>
 
 
 
-<p-toolbar>
+<!-- <p-toolbar>
     <div class="p-toolbar-group-left"></div>
 
     <div class="p-toolbar-group-right">
@@ -36,11 +35,13 @@
 
                 
     </div>
-</p-toolbar>
+</p-toolbar> -->
 
 <div class="p-grid">
     <div class="p-col p-mt-2">
+        <h2> Tareas en curso</h2>
         <p-table [value]="heroes | ordenar:ordenarPor">
+            
             <ng-template pTemplate="header">
                 <tr>
                     <th>Nombre</th>
@@ -81,17 +82,17 @@
     </div>
 </div> -->
 
-<div class="p-grid">
+<!-- <div class="p-grid">
     <div class="p-col p-mt-2">
         <p-table [value]="heroes | slice:0">
             <ng-template pTemplate="header">
                 <tr>
                     <th pSortableColumn="nombre">Nombre<p-sortIcon field="nombre"></p-sortIcon></th>
                     <th pSortableColumn="vuela">Vuela<p-sortIcon field="vuela"></p-sortIcon></th>
-                    <th pSortableColumn="color">Color<p-sortIcon field="color"></p-sortIcon></th>
+                    <th pSortableColumn="color">Color<p-sortIcon field="color"></p-sortIcon></th> -->
                     <!-- <th>Vuela</th>
                     <th>Color</th> -->
-                </tr>
+                <!-- </tr>
             </ng-template>
             <ng-template pTemplate="body" let-heroe>
                 <tr>
@@ -102,4 +103,23 @@
             </ng-template>
         </p-table>
     </div>
-</div>
+</div> -->
+
+<div class="p-grid">
+    <div class="p-col p-md-12">
+        <p-fieldset legend="Tareas terminadas" [toggleable]="true">
+            <p>
+                Saludos nombr es un placer 
+                genero | i18nSelect:invitacionMapa
+                a nuestro evento
+            </p>
+
+            <button pButton type="button" 
+                    label="Cambiar persona"
+                      >
+                
+            </button>
+
+        </p-fieldset>
+    </div>
+    <div>

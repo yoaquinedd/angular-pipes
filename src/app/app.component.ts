@@ -13,4 +13,6 @@ export class AppComponent implements OnInit{
     this.PrimeNGConfig.ripple=true;
     
   }
+
+  
 }

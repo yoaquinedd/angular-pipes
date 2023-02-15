@@ -30,6 +30,7 @@ import { OrdenarPipe } from './pipes/ordenar.pipe';
   imports: [
     CommonModule,
     PrimeNgModule
+    
   ]
 })
 export class VentasModule { }

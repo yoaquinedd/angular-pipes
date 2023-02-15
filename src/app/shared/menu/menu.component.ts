@@ -13,36 +13,41 @@ export class MenuComponent {
 
   ngOnInit(): void {
     this.items = [
+      // {
+      //   label: 'Pipes de Angular',
+      //   icon: 'pi pi-desktop',
+      //   items: [
+      //     {
+      //       label: 'Textos y Fechas',
+      //       icon: 'pi pi-align-left',
+      //       routerLink: '/'
+      //     },
+      //     {
+      //       label: 'Numeros',
+      //       icon: 'pi pi-dollar',
+      //       routerLink: 'numeros'
+      //     },
+      //     {
+      //       label: 'No comunes',
+      //       icon: 'pi pi-globe',
+      //       routerLink: 'no-comunes'
+      //     },
+      //   ]
+      // },
       {
-        label: 'Pipes de Angular',
+        label: 'Resumen',
         icon: 'pi pi-desktop',
-        items: [
-          {
-            label: 'Textos y Fechas',
-            icon: 'pi pi-align-left',
-            routerLink: '/'
-          },
-          {
-            label: 'Numeros',
-            icon: 'pi pi-dollar',
-            routerLink: 'numeros'
-          },
-          {
-            label: 'No comunes',
-            icon: 'pi pi-globe',
-            routerLink: 'no-comunes'
-          },
-        ]
+        routerLink: '/'
       },
       {
         label: 'Tareas',
-        icon: 'pi pi-cog',
+        icon: 'pi pi-check-square',
         routerLink: 'ordenar'
       }
       ,
       {
         label: 'Riesgos/problemas',
-        icon: 'pi pi-cog',
+        icon: 'pi pi-ban',
         routerLink: 'ordenar'
       }
     ];

@@ -7,6 +7,8 @@ import { FieldsetModule } from 'primeng/fieldset';
 import {MenubarModule} from 'primeng/menubar';
 import {ToolbarModule} from 'primeng/toolbar';
 import {TableModule} from 'primeng/table';
+import {DividerModule} from 'primeng/divider';
+import {KnobModule} from 'primeng/knob';
 
 
 
@@ -17,7 +19,9 @@ import {TableModule} from 'primeng/table';
     FieldsetModule,
     MenubarModule,
     ToolbarModule,
-    TableModule
+    TableModule,
+    DividerModule,
+    KnobModule
   ]
 
 })

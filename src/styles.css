@@ -1,9 +1,41 @@
 html, body{
     margin: 10px;
-    background-color: var(--surface-b);
+    background-color: var( --surface-b);
     font-family: var(--font-family);
 }
 
 .text-layout{
     color:var(--text-color);
 }
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 25px;
+}
+
+form{
+    margin: 40px 0;
+}
+
+/* form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px; 
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 15%;
+} */

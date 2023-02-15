@@ -13,7 +13,13 @@ import { VentasModule } from './ventas/ventas.module';
 //Cambiar el locale de la app
 import localeEsCl from "@angular/common/locales/es-CL";
 import localeEsFr from "@angular/common/locales/fr";
-import { registerLocaleData } from "@angular/common";
+import { CommonModule, registerLocaleData } from "@angular/common";
+import { KnobModule } from "primeng/knob";
+
+
+
+
+
 registerLocaleData(localeEsCl);
 registerLocaleData(localeEsFr);
 
@@ -26,7 +32,11 @@ registerLocaleData(localeEsFr);
     BrowserAnimationsModule,
     SharedModule,
     AppRouterModule,
-    VentasModule
+    VentasModule,
+    KnobModule,
+    CommonModule
+
+    
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es-CL'}

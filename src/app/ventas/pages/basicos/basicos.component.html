@@ -4,28 +4,107 @@
 
 <div class="text-layout">
     <h1 style="text-align:center">Resumen de proyecto</h1>
-    <p>
-        Pipes incluidos en Angular - Usualmente en el Common Module
-    </p>
 </div>
 
 <body>
 
     <div class="p-grid">
-        <div class="p-col-12">
-            <p-card header="uppercase" [subheader]="nombreLower">
-                {{nombreLower | uppercase}}
+        <div class="p-col-4">
+            <p-card header="Información de proyecto">
+
+
+
+
+
+                <form>
+                    <div>
+                        <label for="nombreapellido">Lider Sermaluc</label>
+                        <input type="text" id="nombreapellido" class="input-padron" required>
+
+                        <label for="nombreapellido">Fecha inicio</label>
+                        <input type="text" id="nombreapellido" class="input-padron" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="nombreapellido">Cliente</label>
+                        <input type="text" class="input-padron" required>
+
+                        <label for="nombreapellido">Fecha termino</label>
+                        <input type="text" id="nombreapellido" class="input-padron" required>
+                    </div>
+
+                </form>
+
+            </p-card>
+
+
+
+        </div>
+
+        <div class="p-col-4">
+
+            <p-card>
+                <p-knob></p-knob>
+
+            </p-card>
+
+        </div>
+        <div class="p-col-4">
+            <p-card style="text-align:center">Colaboradores
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nombre</td>
+                            <td> Perfil</td>
+                            <td>% Asignacion</td>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+
+                        </tr>
+                    </tbody>
+
+                </table>
             </p-card>
         </div>
+
     </div>
 
+    <button pButton style="float: right" label="Problemas"icon="pi pi-exclamation-circle" iconPos="left" class="p-mr-1 p-button-danger" ></button>
+    <button pButton style="float: right" label="Stoppers"icon="pi pi-ban" iconPos="left" class="p-mr-1 p-button-danger" ></button>
+        
+    
 
 
+    
 
     <div class="p-grid">
 
         <div class="p-col-6">
-            <h1>Hechos relevantes de la semana</h1>
+            <h2>Hechos relevantes de la semana</h2>
             <p-card>
                 <ul>
                     <li> {{fecha}}</li>
@@ -38,7 +117,7 @@
 
             </p-card>
 
-            <h1>Compromisos para la proxima semana</h1>
+            <h2>Compromisos para la proxima semana</h2>
             <p-card>
                 <ul>
                     <li> {{fecha}}</li>
@@ -53,7 +132,7 @@
         </div>
 
         <div class="p-col-6">
-            <h1>Informacion Tactica</h1>
+            <h2>Informacion Tactica</h2>
             <p-card>
                 <ul>
                     <li>fecha</li>
@@ -102,7 +181,7 @@
 
                 <div class="p-toolbar-group-right">
 
-                    <button pButton type="button" label="Carta Gantt" class="p-mr-1 p-button-info ">
+                    <button pButton type="button" label="Carta Gantt" icon="pi pi-file" iconPos="right" class="p-mr-1 p-button-info ">
                     </button>
                 </div>
             </p-toolbar>
@@ -114,10 +193,10 @@
 
                 <div class=" p-toolbar-group-right ">
 
-                    <button pButton type="button" label="Gaurdar Todo" class="p-mr-1 p-button-info">
+                    <button pButton type="button" label="Gaurdar Todo" icon="pi pi-save" iconPos="right" class="p-mr-1 p-button-info">
                     </button>
 
-                    <button pButton type="button" label="Siguiente" class="p-mr-1 p-button-info">
+                    <button pButton type="button" label="Siguiente" icon="pi pi-arrow-circle-right" iconPos="right" class="p-mr-1 p-button-info" routerLink='/ordenar'>
                     </button>
 
 
